@@ -1,0 +1,40 @@
+﻿@model List<Patient>
+
+<div class="row">
+
+    <div class="col-6">
+        <h1>
+            Patient
+        </h1>
+    </div>
+    <div class="col-6">
+        <a class="btn btn-primary text-end" asp-controller="Patient" asp-action="Create">
+            <i class="bi bi-plus-circle-fill"></i> Create new Patient
+        </a>
+    </div>
+</div>
+
+<table class="table table-borded table-striped">
+    <thead>
+        <tr>
+            <th>Name <i class="bi bi-person"></i></th>
+            <th>Id <i class="bi bi-person-badge-fill"></i></th>
+            <th>Temperature <i class="bi bi-thermometer-half"></i></th>
+            <th>HeartRate <i class="bi bi-activity"></i></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.Name</td>
+                <td>@obj.Id</td>
+                <td>@obj.Temperature</td>
+                <td>@obj.HeartRate</td>
+
+            </tr>
+
+        }
+    </tbody>
+
+</table>

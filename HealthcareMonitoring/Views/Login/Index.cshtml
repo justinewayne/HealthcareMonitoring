@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Health Starts Here</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('image/doctor-approaches-patient.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <br />
+
+    <div class="text-center">
+        <h1 class="display-4" style="
+        font-family: 'Berlin Sans FB', Times, serif;
+        color: dodgerblue;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6),
+                 -2px -2px 4px rgba(255, 255, 255, 0.3);
+        background: linear-gradient(45deg, dodgerblue,);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:;
+        font-size: 3.5rem;
+        letter-spacing: 1px;">
+            Better Health Starts Here
+        </h1>
+
+        <p class="lead mt-sm-1" style="
+        font-family: 'Berlin Sans FB', Times, serif;
+        color: black;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        line-height: 1.6;
+        letter-spacing: 0.5px;">
+            "Our platform connects you to trusted healthcare providers, personalized care plans, and easy-to-use tools to manage your wellness journey—all in one place."
+        </p>
+
+    </div>
+    <br />
+    <br />
+   
+
+    <div class="container my-sm-3">
+        <h2>
+            Sign-up here
+        </h2>
+        <form>
+            <div class="mb-3">
+                <label for="nurse" class="form-label"><i class="bi bi-person"></i> Nurse</label>
+                <input type="text" id="nurse" class="form-control" style="max-width: 400px;" placeholder="Enter nurse's name" />
+            </div>
+
+            <div class="mb-3">
+                <label for="id" class="form-label"><i class="bi bi-person-badge-fill"></i> I.D.</label>
+                <input type="text" id="id" class="form-control" style="max-width: 400px;" placeholder="Enter nurse's I.D." />
+            </div>
+
+            <div>
+                <a class="btn btn-primary btn-lg" asp-controller="Home" asp-action="Index">
+                    Login <i class="bi bi-box-arrow-in-right"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
